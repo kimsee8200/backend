@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="908f06ac-2a5f-45f7-b23a-d59831fb02ab" name="Changes" comment="new" />
+    <list default="true" id="908f06ac-2a5f-45f7-b23a-d59831fb02ab" name="Changes" comment="new">
+      <change afterPath="$PROJECT_DIR$/algorethem/src/boj1463.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorethem/src/boj9095.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +54,7 @@
       <updated>1717327207248</updated>
       <workItem from="1717327208255" duration="302000" />
       <workItem from="1717327583571" duration="632000" />
+      <workItem from="1717407825599" duration="1238000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <option name="closed" value="true" />
@@ -59,7 +64,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717327446579</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new">
+      <option name="closed" value="true" />
+      <created>1717407859459</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717407859459</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
