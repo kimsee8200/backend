@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="908f06ac-2a5f-45f7-b23a-d59831fb02ab" name="Changes" comment="new">
-      <change afterPath="$PROJECT_DIR$/memoryDB/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study" beforeDir="false" afterPath="$PROJECT_DIR$/study" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/metoring/build/classes/java/main/com/example/metoring/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/study/metoring/build/classes/java/main/com/example/metoring/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/metoring/build/classes/java/main/com/example/metoring/ServletInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/study/metoring/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/study/metoring/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-    </list>
+    <list default="true" id="908f06ac-2a5f-45f7-b23a-d59831fb02ab" name="Changes" comment="new" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +12,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -66,7 +59,7 @@
       <workItem from="1717327208255" duration="302000" />
       <workItem from="1717327583571" duration="632000" />
       <workItem from="1717407825599" duration="1238000" />
-      <workItem from="1717733414309" duration="599000" />
+      <workItem from="1717733414309" duration="3131000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <option name="closed" value="true" />
@@ -84,7 +77,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717407859459</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new">
+      <option name="closed" value="true" />
+      <created>1717744282962</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717744282962</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new">
+      <option name="closed" value="true" />
+      <created>1717744504899</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717744504899</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
