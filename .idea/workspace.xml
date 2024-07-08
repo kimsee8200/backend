@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="908f06ac-2a5f-45f7-b23a-d59831fb02ab" name="Changes" comment="new">
+      <change afterPath="$PROJECT_DIR$/SpringOAuthLearn/src/main/java/com/example/springoauthlearn/Controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringOAuthLearn/src/main/java/com/example/springoauthlearn/Controllers/MyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringOAuthLearn/src/main/java/com/example/springoauthlearn/SecurityConfig/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorethem/src/boj2160.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringOAuthLearn/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/SpringOAuthLearn/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringOAuthLearn/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringOAuthLearn/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorethem/src/bfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorethem/src/AlgorithmKnowledge/bfs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorethem/src/graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorethem/src/AlgorithmKnowledge/dfs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +76,7 @@
       <workItem from="1718201750177" duration="121000" />
       <workItem from="1718201875120" duration="11000" />
       <workItem from="1720349104137" duration="1184000" />
+      <workItem from="1720351614314" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="new">
       <option name="closed" value="true" />
@@ -148,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720349183361</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="new">
+      <option name="closed" value="true" />
+      <created>1720351639171</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720351639171</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
