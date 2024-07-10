@@ -12,5 +12,6 @@ public class boj17478 {
         }else{
             return reCall(count-1);
         }
+        return null;
     }
 }
