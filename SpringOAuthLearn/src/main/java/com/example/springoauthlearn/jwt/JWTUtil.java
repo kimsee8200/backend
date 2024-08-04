@@ -1,4 +1,4 @@
-package com.example.springoauthlearn.service;
+package com.example.springoauthlearn.jwt;
 
 import io.jsonwebtoken.Jwts;
 import org.springframework.beans.factory.annotation.Value;

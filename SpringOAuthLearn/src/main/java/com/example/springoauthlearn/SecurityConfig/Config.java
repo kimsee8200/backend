@@ -1,13 +1,12 @@
 package com.example.springoauthlearn.SecurityConfig;
 
-import com.example.springoauthlearn.filter.JWTFilter;
+import com.example.springoauthlearn.jwt.JWTFilter;
 import com.example.springoauthlearn.service.CustomOAuth2UserService;
 import com.example.springoauthlearn.service.CustomSuccessHandler;
-import com.example.springoauthlearn.service.JWTUtil;
+import com.example.springoauthlearn.jwt.JWTUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;

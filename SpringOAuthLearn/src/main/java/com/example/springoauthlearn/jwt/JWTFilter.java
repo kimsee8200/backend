@@ -1,9 +1,9 @@
-package com.example.springoauthlearn.filter;
+package com.example.springoauthlearn.jwt;
 
 
 import com.example.springoauthlearn.DTO.CustomOAuth2User;
 import com.example.springoauthlearn.DTO.UserDTO;
-import com.example.springoauthlearn.service.JWTUtil;
+import com.example.springoauthlearn.jwt.JWTUtil;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;

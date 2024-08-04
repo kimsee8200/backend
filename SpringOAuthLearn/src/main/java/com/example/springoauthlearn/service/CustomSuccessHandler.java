@@ -1,13 +1,12 @@
 package com.example.springoauthlearn.service;
 
 import com.example.springoauthlearn.DTO.CustomOAuth2User;
+import com.example.springoauthlearn.jwt.JWTUtil;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import lombok.Generated;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.autoconfigure.task.TaskExecutionProperties;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;

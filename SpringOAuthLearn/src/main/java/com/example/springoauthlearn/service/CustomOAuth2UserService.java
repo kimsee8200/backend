@@ -45,10 +45,7 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
 
             userRepository.save(userEntity);
 
-            UserDTO userDTO = new UserDTO();
-            userDTO.setUsername(username);
-            userDTO.setName(oAuth2Response.getName());
-            userDTO.setRole("ROLE_USER");
+            UserDTO userDTO = new UserDTO(username,oAuth2Response.getName(),"ROLE_USER");
             return new CustomOAuth2User(userDTO);
         }
         else { // 이미있는 회원 소셜로그인 적용.
@@ -57,10 +54,7 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
 
             userRepository.save(existData);
 
-            UserDTO userDTO = new UserDTO();
-            userDTO.setUsername(existData.getUsername());
-            userDTO.setName(oAuth2Response.getName());
-            userDTO.setRole(existData.getRole());
+            UserDTO userDTO = new UserDTO(existData.getUsername(),oAuth2Response.getName(),existData.getRole());
 
             return new CustomOAuth2User(userDTO);
 
