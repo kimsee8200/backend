@@ -1,11 +1,8 @@
 package org.example.testoauth.domain.User.dao;
 
-import com.nimbusds.oauth2.sdk.Role;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
+import org.example.testoauth.domain.role.Role;
 
 import java.util.List;
 
@@ -13,17 +10,19 @@ import java.util.List;
 @RequiredArgsConstructor
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 @Builder
 public class Member {
 
     @Id
     private String name;
-    @Column
+    @Column(nullable = false)
     private String email;
-    @Column
+    @Column(nullable = false)
     private String profile;
-    @Column
-    private String role;
+    @Column(nullable = false)
+    @Enumerated(value = EnumType.STRING)
+    private Role role;
 
 //    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
 //    @JoinColumn(referencedColumnName = "role")

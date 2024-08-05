@@ -1,9 +1,10 @@
 package org.example.testoauth.domain.User.dto;
 
-import jakarta.security.auth.message.AuthException;
 import lombok.Builder;
 import org.example.testoauth.domain.User.dao.Member;
+import org.example.testoauth.domain.User.exception.AuthException;
 import org.example.testoauth.domain.role.Role;
+import org.example.testoauth.exceptions.ErrorCode;
 
 import java.util.List;
 import java.util.Map;
@@ -18,7 +19,7 @@ public record OAuth2UserInfo(
         return switch (registrationId) {
             case "google" -> ofGoogle(attributes);
             case "kakao" -> ofKakao(attributes);
-            default -> throw new AuthException();
+            default -> throw new AuthException(ErrorCode.ILLEGAL_REGISTRATION_ID);
         };
     }
 
@@ -47,7 +48,7 @@ public record OAuth2UserInfo(
                 .name(name)
                 .email(email)
                 .profile(profile)
-                .role(Role.LEADER.getDesc())
+                .role(Role.LEADER)
                 .build();
     }
 

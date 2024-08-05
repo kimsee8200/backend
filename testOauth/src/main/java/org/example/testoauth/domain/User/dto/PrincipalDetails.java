@@ -2,10 +2,12 @@ package org.example.testoauth.domain.User.dto;
 
 import org.example.testoauth.domain.User.dao.Member;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Map;
 
 public record PrincipalDetails(
@@ -50,7 +52,9 @@ public record PrincipalDetails(
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        return Collections.singletonList(
+                new SimpleGrantedAuthority(member.getRole().getDesc())
+        );
     }
 
     @Override

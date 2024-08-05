@@ -4,6 +4,7 @@ import jakarta.security.auth.message.AuthException;
 import lombok.RequiredArgsConstructor;
 import org.example.testoauth.domain.User.dao.Member;
 import org.example.testoauth.domain.User.dto.OAuth2UserInfo;
+import org.example.testoauth.domain.User.dto.PrincipalDetails;
 import org.example.testoauth.repository.MemberRepository;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
@@ -31,15 +32,13 @@ public class CustomOauth2UserService extends DefaultOAuth2UserService {
                 .getUserInfoEndpoint().getUserNameAttributeName();
 
         OAuth2UserInfo oAuth2UserInfo = null;
-        try {
-            oAuth2UserInfo = OAuth2UserInfo.of(registrationId, oAuth2UserAttributes);
-        } catch (AuthException e) {
-            throw new RuntimeException(e);
-        }
+
+        oAuth2UserInfo = OAuth2UserInfo.of(registrationId, oAuth2UserAttributes);
+
         Member member = getOrSave(oAuth2UserInfo);
 
 
-        return new;
+        return new PrincipalDetails(member,oAuth2UserAttributes,userNameAttributeName);
     }
 
     private Member getOrSave(OAuth2UserInfo oAuth2UserInfo){
@@ -47,4 +46,5 @@ public class CustomOauth2UserService extends DefaultOAuth2UserService {
                 .orElseGet(oAuth2UserInfo::toEntity);
         return memberRepository.save(member);
     }
+
 }
