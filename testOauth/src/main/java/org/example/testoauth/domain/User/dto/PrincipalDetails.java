@@ -42,12 +42,12 @@ public record PrincipalDetails(
 
     @Override
     public String getUsername() {
-        return null;
+        return member().getName();
     }
 
     @Override
     public Map<String, Object> getAttributes() {
-        return null;
+        return attributes;
     }
 
     @Override
@@ -59,6 +59,6 @@ public record PrincipalDetails(
 
     @Override
     public String getName() {
-        return null;
+        return attributes.get(attributeKey).toString();
     }
 }
