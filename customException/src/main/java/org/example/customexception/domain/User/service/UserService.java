@@ -17,6 +17,7 @@ public class UserService {
         ResponseUser responseUser = new ResponseUser(user.username(),user.password(),"");
         User saveData = new User(responseUser);
 
+        userRepository.save(saveData);
     }
 
 }
