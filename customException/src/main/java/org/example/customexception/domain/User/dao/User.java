@@ -18,12 +18,12 @@ public class User {
     private Integer id;
 
     @Column(name = "user_id",unique = true)
-    private String userId;
+    private String username;
     private String password;
     private String role;
 
     public User (ResponseUser user){
-        this.userId = user.username();
+        this.username = user.username();
         this.password = user.password();
         this.role = user.role();
     }

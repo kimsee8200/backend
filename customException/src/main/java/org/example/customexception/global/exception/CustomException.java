@@ -1,6 +1,10 @@
 package org.example.customexception.global.exception;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode(callSuper = true)
+@Data
 public abstract class CustomException extends RuntimeException{
 
     private ErrorCode errorCode;

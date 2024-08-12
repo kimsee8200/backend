@@ -8,7 +8,10 @@ import org.springframework.http.HttpStatusCode;
 @Getter
 public enum ErrorCode {
 
-    NOT_FOUND(HttpStatusCode.valueOf(404),"영구 없다.");
+    UNCORRECT_REQUEST(HttpStatusCode.valueOf(400),"잘못된 요청"),
+    NOT_FOUND(HttpStatusCode.valueOf(404),"영구 없다."),
+    AUTH_FAIL(HttpStatusCode.valueOf(401),"인증실패"),
+    USER_NOT_ROLE(HttpStatusCode.valueOf(403),"권한 없음");
 
     private final HttpStatusCode Code;
     private final String message;

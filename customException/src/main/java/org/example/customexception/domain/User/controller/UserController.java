@@ -10,12 +10,12 @@ public class UserController {
 
     @PostMapping("/register")
     public ResponseEntity<?> register(){
-
+        return null;
     }
 
     @PostMapping("/login")
     public ResponseEntity<?> login(){
-
+        return null;
     }
 }
 

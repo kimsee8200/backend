@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60da3301-5f75-4d64-a1a8-c3fda585cc26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../SpringOAuthLearn/src/main/java/com/example/springoauthlearn/filter/JWTFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringOAuthLearn/src/main/java/com/example/springoauthlearn/service/JWTUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringOAuthLearn/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringOAuthLearn/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../algorethem/src/boj1268.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/domain/User/exception/AuthFailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/domain/User/exception/UserAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/domain/User/exception/UserNoExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/global/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../algorethem/src/boj2869.java" beforeDir="false" afterPath="$PROJECT_DIR$/../algorethem/src/boj2869.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/domain/User/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/domain/User/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/domain/User/dao/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/domain/User/dao/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/domain/User/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/domain/User/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/domain/User/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/domain/User/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/global/exception/CustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/global/exception/CustomException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/global/exception/CustomExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/global/exception/CustomExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/global/exception/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/global/exception/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/global/exception/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customException/src/main/java/org/example/customexception/global/exception/ErrorResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,29 +43,29 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2jJstUjXCY50bPyNPnLfFOyI3Qy" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/github/Taltree-backend/teltree",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/github/Taltree-backend/teltree&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="TeltreeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -74,6 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721116729957</updated>
       <workItem from="1721116730871" duration="5654000" />
+      <workItem from="1723470080223" duration="10000" />
     </task>
     <servers />
   </component>
