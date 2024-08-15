@@ -1,0 +1,5 @@
+rootProject.name = 'deliverServuce'
+include 'api'
+include 'db'
+include 'api'
+
