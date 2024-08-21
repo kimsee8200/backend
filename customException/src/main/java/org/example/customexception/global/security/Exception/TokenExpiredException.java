@@ -14,10 +14,5 @@ public class TokenExpiredException extends CustomException {
     TokenExpiredException tokenExpiredException = new TokenExpiredException();
     public TokenExpiredException() {
         super(ErrorCode.UNCORRECT_REQUEST, "token is expired");
-=======
-    public TokenExpiredException tokenNoExistException = new TokenExpiredException();
-    public TokenExpiredException() {
-        super(ErrorCode.UNCORRECT_REQUEST,"token is Expired");
->>>>>>> deliverService-make
     }
 }
