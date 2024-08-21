@@ -16,6 +16,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -50,7 +51,7 @@ public class CustomLoginFilter extends UsernamePasswordAuthenticationFilter {
         String role =  auth.getAuthority();
         String token = jwtUtil.cerateJwt(username,role, (long) (1000*60*60*24));
 
-        response.addHeader("Authorization", STR."Bearer \{token}");
+        response.addHeader("Authorization", "Bearer "+token);
     }
 
     @Override

@@ -4,6 +4,9 @@ spring:
     password: ${DB_PW}
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/backtotheearly
+
   jwt:
     secret: ehdgoanfrhkqorentksdlakfmrhekfaehfhr
-
+  jpa:
+    hibernate:
+      ddl-auto: create

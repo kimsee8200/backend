@@ -12,6 +12,7 @@ import org.example.customexception.domain.User.dto.ResponseUser;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Table(name = "user")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
