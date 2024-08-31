@@ -30,7 +30,6 @@ public class SecurityConfig {
                                 .requestMatchers("/","/login/*").permitAll()
                                 .anyRequest().authenticated()
                 );
-
         return http.build();
 
     }

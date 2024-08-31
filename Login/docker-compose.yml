@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  api_login:
+    image: msg-api:latest
+    build:
+      dockerfile: ./Api/Dockerfile
+    ports:
+      - "9001:8070"
+
+  redis_login:
+    image: redis:latest
+    command:
+      -  REDIS_PASSWORD=1234
+
