@@ -7,9 +7,41 @@ services:
       dockerfile: ./Api/Dockerfile
     ports:
       - "9001:8070"
+    networks:
+      - login
 
   redis_login:
     image: redis:latest
+    restart: always
+    ports:
+      - "3200:6397"
+    volumes:
+      - C:\Users\user\Desktop\Back\docker\loginStudy\redis:/data
+      - C:\Users\user\Desktop\Back\docker\loginStudy\redis\config:/usr/local/conf/redis.conf
     command:
-      -  REDIS_PASSWORD=1234
+      - redis-server /usr/local/conf/redis.conf
+    networks:
+      - login
+  mysql_login:
+    image: mysql:latest
+    restart: always
+    command:
+      - --lower_case_table_names=1
+      - -- character-set-server=utf8mb4
+      - -- collation-server=urf8mb4_unicode_ci
+    ports:
+      - "3100:3306"
+    environment:
+      - MYSQL_DATABASE=loginsql
+      - MYSQL_ROOT_PASSWORD=1234
+      - TZ = Asia/Seoul
+    volumes:
+      - C:\Users\user\Desktop\Back\docker\loginStudy\mysql:/var/lib/mysql
+    networks:
+      - login
+
+networks:
+  login:
+    driver: bridge
+
 
