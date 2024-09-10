@@ -27,8 +27,8 @@ services:
     restart: always
     command:
       - --lower_case_table_names=1
-      - -- character-set-server=utf8mb4
-      - -- collation-server=urf8mb4_unicode_ci
+      - --character-set-server=utf8mb4
+      - --collation-server=urf8mb4_unicode_ci
     ports:
       - "3100:3306"
     environment:

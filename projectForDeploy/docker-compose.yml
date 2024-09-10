@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  server:
+    image: kimsee/deploytest:latest
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - "8200:8080"

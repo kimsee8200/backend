@@ -42,26 +42,24 @@ public class boj12789 {
         for (String n: num.split(" ")) {
             numList.add(Integer.parseInt(n));
         }
-        int last = Integer.parseInt(readNum);
         int flag = 1;
-        int tmp = 0;
+        int tmp;
 
-        while(flag == last+1){
-            if(!numList.isEmpty()){
+        while(!numList.isEmpty()){
                tmp = numList.get(0);
-            }else
-            if(tmp == flag){
-                numList.remove(0);
-                flag++;
-            } else {
-                stack.push(numList.get(0));
-                numList.remove(0);
-            }
-            while(stack.peek() == flag){
-                stack.pop();
-                flag++;
-                if(stack.isEmpty()){
-                    break;
+               numList.remove(0);
+                if(tmp == flag){
+                    flag++;
+                } else {
+                    stack.push(tmp);
+                }
+            if(!stack.isEmpty()) {
+                while (stack.peek() == flag) {
+                    stack.pop();
+                    flag++;
+                    if (stack.isEmpty()) {
+                        break;
+                    }
                 }
             }
         }
