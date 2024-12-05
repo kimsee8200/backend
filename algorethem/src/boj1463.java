@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static java.lang.Math.min;
+
 public class boj1463 {
     public static void main(String[] args) {
         // 3가지 경우, 1. 1을 뺀다 2. 2로 나누어 떨어질 때 2로 나눈다. 3. 3으로 나누어 떨어 질 수 있을 때 3으로 나누어 떨어진다.
@@ -11,22 +13,18 @@ public class boj1463 {
     }
 
     public static int makeOne(int n){
-        int count=0;
+        int[] carry = new int[n+1];
+       for(int i = 2; i <= n; i++){
+           carry[i] = carry[i-1] + 1;
+           if(carry[i] % 3 == 0){
+               carry[i] = min(carry[i], carry[i/3]+1);
+           }
+           if(carry[i] % 2 == 0){
+               carry[i] = min(carry[i], carry[i/2]+1);
+           }
+       }
+       return carry[n];
 
-        List<Integer> list = new ArrayList<>();
-        list.add(0);
-        list.add(1);
-        list.add(1);
-
-
-        if(n<=3){
-            return list.get(n-1);
-        }
-
-        for(int i = 3; i < n ;i++){
-            list.get(i-2);
-        }
-        return count;
     }
 
 }
